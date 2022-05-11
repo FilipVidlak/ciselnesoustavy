@@ -20,6 +20,7 @@ namespace ciselnesoustavy
         {
             if (cislo < 2) return false;
             if (cislo == 2) return true;
+            if(cislo % 2 == 0) return false;
             for (int i = 3; i < Math.Sqrt(cislo); i += 2)
             {
                 if (cislo % i == 0) return false;
